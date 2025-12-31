@@ -16,6 +16,8 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
+from django.urls import re_path
+from django.views.generic import RedirectView
 from rest_framework import routers
 from . import views
 
@@ -53,4 +55,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', api_root, name='api-root'),
     path('api/', include(router.urls)),
+    re_path(r'^$', RedirectView.as_view(url='/api/', permanent=False)),
 ]
