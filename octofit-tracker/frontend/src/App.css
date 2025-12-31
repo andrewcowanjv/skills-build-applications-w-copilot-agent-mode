@@ -1,0 +1,105 @@
+
+body {
+  background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+  min-height: 100vh;
+  color: #22223b;
+}
+
+.App {
+  text-align: center;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #3b82f6 0%, #6366f1 100%) !important;
+  box-shadow: 0 2px 8px rgba(60,60,100,0.08);
+}
+.navbar-brand span {
+  color: #fff !important;
+  letter-spacing: 1px;
+}
+.navbar .nav-link {
+  color: #e0e7ff !important;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.navbar .nav-link.active, .navbar .nav-link:hover {
+  color: #fbbf24 !important;
+}
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(60,60,100,0.07);
+  background: #fff;
+}
+.card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+.text-primary, .card-title.text-primary { color: #3b82f6 !important; }
+.text-success, .card-title.text-success { color: #10b981 !important; }
+.text-info, .card-title.text-info { color: #0ea5e9 !important; }
+.text-warning, .card-title.text-warning { color: #f59e42 !important; }
+.text-danger, .card-title.text-danger { color: #ef4444 !important; }
+
+table.table {
+  background: #f8fafc;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.table thead {
+  background: #6366f1;
+  color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #e0e7ff;
+}
+.table-bordered th, .table-bordered td {
+  border: 1px solid #6366f1;
+}
+
+button, .btn {
+  background: linear-gradient(90deg, #6366f1 0%, #3b82f6 100%);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+button:hover, .btn:hover {
+  background: linear-gradient(90deg, #3b82f6 0%, #6366f1 100%);
+  color: #fbbf24;
+}
+
+a, .App-link {
+  color: #6366f1;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover, .App-link:hover {
+  color: #fbbf24;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #3b82f6;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  font-weight: 700;
+}
+
+/* Favicon and logo tweaks */
+.navbar-brand img {
+  box-shadow: 0 2px 8px rgba(60,60,100,0.12);
+  background: #fff;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .navbar-brand span {
+    font-size: 1.1rem;
+  }
+  .card-title {
+    font-size: 1.2rem;
+  }
+}
